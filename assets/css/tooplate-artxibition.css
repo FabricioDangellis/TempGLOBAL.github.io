@@ -626,9 +626,7 @@ banner
 }
 
 .main-banner .next-show {
-  position: absolute;
-  top: -165px;
-  left: 50%;
+  margin-top: -150px;
   transform: translateX(-50%);
   animation: move-up-down 3s infinite;
 }
@@ -800,6 +798,13 @@ Venues & Tickets
   display: inline-block;
   z-index: 1;
   width: 100%;
+}
+
+.venue-item .down-content.videoContainer {
+  padding: 4% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .venue-item .down-content .left-content {
@@ -1383,7 +1388,7 @@ Rent Venue Page
 */
 
 .page-heading-rent-venue {
-  background-image: url(../images/rent_venue_bg.jpg);
+  background-image: url(../images/business-concept-with-graphic-holography.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 110px 0px;
@@ -1563,7 +1568,17 @@ Shows Events Page
 */
 
 .page-heading-shows-events {
-  background-image: url(../images/shows_events_bg.jpg);
+  background-image: url(../images/people-having-protest-world-environment-day.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 110px 0px;
+  text-align: center;
+}
+
+.page-heading-shows-events.dasboard{
+  background-image: url(../images/modern-equipped-computer-lab.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 110px 0px;
