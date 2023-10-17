@@ -92,16 +92,17 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row" id="tabs">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12" id="topo">
                             <div class="heading-tabs">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <ul>
                                           <li><a href='#introducao'>Introdução</a></li>
                                           <li><a href='#linear'>Linear</a></a></li>
-                                          <li><a href='#exponencial'>Exponencial</a></a></li>
-                                          <li><a href='#geometrica'>Geometrico</a></li>
                                           <li><a href='#logaritima'>Logaritima</a></a></li>
+                                          <li><a href='#exponencial'>Exponencial</a></a></li>
+                                          <li><a href="#potencial">Potencial</a></li>
+                                          <li><a href='#geometrica'>Geometrico</a></li>
                                           <li><a href='#polinomial'>Polinomial</a></a></li>
                                           <li><a href='#codigo'>Código em Phyton</a></a></li>
                                         </ul>
@@ -113,20 +114,138 @@ https://www.tooplate.com/view/2125-artxibition
                             <section class='tabs-content container'>
                                 <article id='introducao'>
                                     <div class="row">
-                                        
-                                            <div class="right-content">
+                                            <div class="col-lg-12">
                                                 <h4>Introdução</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                    lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                    diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                     eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                     sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br>
+                                                <p>O site da NASA (National Aeronautics and Space Administration - Administração Nacional da Aeronáutica e Espaço) 
+                                                    disponibiliza dados sobre a temperatura atmosférica dos últimos 100 anos. Para uma análise sobre esses dados nós 
+                                                    calculamos por década, fazendo uma média de cada dez anos, e aplicamos o Método dos Mínimos Quadrados (MMQ)*. 
+                                                    Esse método é um procedimento matemático utilizado para encontrar a melhor linha de ajuste (ou curva) 
+                                                    que minimiza a soma dos quadrados das diferenças entre os valores observados e os valores previstos por essa 
+                                                    linha de ajuste. Em sua forma mais básica, o MMQ é utilizado para ajustar um modelo linear a um conjunto de dados, 
+                                                    mas também pode ser aplicado a modelos não lineares. <br><br>
+                                            </div>
 
-                                                    Cras sed cursus nisi. In hac habitasse platea dictumst. Nunc pellentesque, magna ac egestas laoreet, justo arcu 
-                                                    accumsan lorem, vitae vulputate lorem eros at massa. Nullam luctus fringilla pellentesque. Nam nec euismod est. 
-                                                    Ut eget risus dui. Sed condimentum aliquam elit et fermentum. In facilisis, massa et efficitur posuere, neque mauris 
-                                                    tincidunt ipsum, non tincidunt libero urna non augue. Donec et arcu sit amet lorem accumsan convallis.
+                                            <div class="col-lg-6 "></div>
+                                            <div class="col-lg-6 ">
+                                                <p>* Em 1809, Carl Friedrich Gauss (1777-1855) publicou um artigo demonstrando que a melhor maneira de determinar um 
+                                                    parâmetro desconhecido de uma equação de condições é minimizando a soma dos quadrados dos resíduos, mais tarde 
+                                                    chamado de Mínimos Quadrados por Adrien-Marie Legendre (1752-1833). Em abril de 1810, Pierre-Simon Laplace (1749-1827) 
+                                                    apresenta no memoir da Academia de Paris, a generalização a problemas com vários parâmetros desconhecidos. <br>
+                                                    <a href="http://astro.if.ufrgs.br/minq/#:~:text=Em%201809%2C%20Carl%20Friedrich%20Gauss,Legendre%20(1752%2D1833).">
+                                                        [http://astro.if.ufrgs.br/minq/#:~:text=Em%201809%2C%20Car<br>l%20Friedrich%20Gauss,Legendre%20(1752%2D1833).]</a>
                                                     <br><br>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <p>
+                                                    A ideia fundamental por trás do MMQ é encontrar os parâmetros do modelo (por exemplo, os coeficientes em um modelo linear) 
+                                                    que minimizam a soma dos quadrados dos resíduos, onde o resíduo é a diferença entre o valor observado e o valor previsto 
+                                                    pelo modelo. O MMQ utiliza cálculos matemáticos, como derivadas parciais, para encontrar esses parâmetros que minimizam a 
+                                                    função de erro. <br>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-lg-12" style="display: flex; align-items: center; justify-content: center;">
+                                                <img src="./assets/images/erro.png" alt="">
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <p>
+                                                    onde: <br>
+                                                    Erro (resíduo) é a diferença entre o valor real e o valor calculado <br>
+                                                    Σ representa a soma sobre todos os pontos de dados. <br>
+                                                    y_i é o valor observado. <br>
+                                                    " g(" x_i ")"  é o valor previsto pelo modelo. <br>
+                                                    n é o número de observações. <br>
+                                                    Para minimizar o erro usamos os mínimos quadrados: <br>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-lg-12" style="display: flex; align-items: center; justify-content: center;">
+                                                <img src="./assets/images/erromin.png" alt="">
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <p>
+                                                    O MMQ procura encontrar os coeficientes do modelo que minimizam essa função de erro quadrático médio, tornando a linha de 
+                                                    ajuste (ou curva) a melhor representação possível dos dados observados. <br><br>
+
+                                                    No modelo Linearg(x)=ax+b, portanto o para minimizar o erro vamos ter:
+                                                    <img src="./assets/images/erro 3.png" alt="" height="30px">
+                                                    Usando as derivadas 
+                                                    parciais (∂E⁄∂a=0, ∂E⁄∂b=0) encontramos os coeficiente a e b: <br>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-lg-12" style="display: flex; align-items: center; justify-content: center;">
+                                                <img src="./assets/images/ab.png" alt="">
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <h6>Critério de Avaliação</h6>
+                                                <p>O coeficiente de determinação, frequentemente representado como R², é uma medida estatística amplamente usada para avaliar o 
+                                                    quão bem um modelo se ajusta aos dados. Ele fornece uma indicação da proporção da variabilidade total nos dados que é 
+                                                    explicada pelo modelo. Em relação à avaliação de uma função, o R² é uma métrica importante para entender o quão bem a função 
+                                                    escolhida se ajusta aos dados observados. Quanto mais próximo o R² estiver de 1, melhor o modelo se ajusta aos dados. Um R² 
+                                                    igual a 1 indica que o modelo explica toda a variabilidade nos dados, o que é altamente desejável. Por exemplo, se R² for 
+                                                    0,80, isso significa que 80% da variabilidade nos dados é explicada pelo modelo, enquanto os 20% restantes podem ser devidos 
+                                                    a outras fontes de variação não explicadas pelo modelo. O R² também é útil para comparar diferentes modelos. Quando você está 
+                                                    avaliando várias funções ou modelos, o R² pode ajudar a determinar qual deles se ajusta melhor aos dados. Geralmente, o modelo 
+                                                    com o R² mais alto é considerado o melhor ajuste, desde que seja estatisticamente significativo. <br><br>
+                                                    
+                                                    É importante estar ciente de que o R² não é uma medida absoluta da qualidade do modelo. Um modelo muito complexo pode obter um 
+                                                    alto R², mas pode não ser prático ou generalizável. <br><br>
+                                                    
+                                                    Em resumo, o R² é uma métrica importante para avaliar o ajuste de uma função ou modelo aos dados. Ele fornece uma medida quantitativa 
+                                                    da qualidade do ajuste e pode ser usado para comparar diferentes modelos. No entanto, é crucial interpretar o R² em conjunto com 
+                                                    outras informações e considerar a relevância prática do modelo para o problema em questão. <br><br>
+                                                    <br>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-lg-12" style="display: flex; align-items: center; justify-content: center;">
+                                                <img src="./assets/images/r2.png" alt="">
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <p>O Método dos Mínimos Quadrados (MMQ) pode ser aplicado a funções não lineares da mesma forma que é aplicado a funções lineares. No 
+                                                    entanto, a principal diferença está na forma como o modelo não linear é definido e como os parâmetros desse modelo são estimados. 
+                                                    Aqui estão os passos básicos para usar o MMQ em uma função não linear: <br><br>
+
+                                                    Escolha um modelo não linear: Em primeiro lugar, é necessário escolher um modelo matemático que represente adequadamente a relação 
+                                                    entre as variáveis dependentes e independentes. O modelo não linear pode ter a forma de uma equação não linear, como uma exponencial, 
+                                                    logarítmica, polinomial de grau elevado, entre outros. <br><br>
+                                                    
+                                                    Defina os parâmetros do modelo: O modelo não linear deve incluir parâmetros desconhecidos que precisam ser estimados com base nos dados 
+                                                    observados. Por exemplo, um modelo exponencial pode ser definido como: y = a * e^(bx), onde 'a' e 'b' são os parâmetros a serem estimados. <br><br>
+                                                    
+                                                    Crie uma função de erro: Assim como no caso do MMQ para modelos lineares, é preciso definir uma função que calcule os resíduos ou erros 
+                                                    entre os valores observados e os valores previstos pelo modelo não linear. Essa função é geralmente uma medida da diferença quadrática 
+                                                    entre os valores observados e os valores previstos pelo modelo. <br><br>
+                                                    
+                                                    Minimize a função de erro: Utilize métodos numéricos, como o algoritmo de otimização não linear, para encontrar os valores dos parâmetros 
+                                                    do modelo que minimizam a função de erro. Isso envolve ajustar iterativamente os parâmetros do modelo até que a função de erro seja minimizada. <br><br>
+                                                    
+                                                    Avalie a qualidade do ajuste: Após estimar os parâmetros do modelo, é importante avaliar a qualidade do ajuste. Isso pode ser feito 
+                                                    calculando estatísticas de ajuste, como o coeficiente de determinação (R²), o erro padrão da estimativa, ou outros indicadores 
+                                                    relevantes para o seu problema específico. <br><br>
+                                                    
+                                                    Realize testes de significância: Dependendo do contexto, você pode desejar realizar testes de significância estatística para determinar 
+                                                    se os parâmetros do modelo são realmente significativos. Isso envolve a análise de intervalos de confiança e testes de hipóteses para os 
+                                                    parâmetros estimados. <br><br>
+                                                    
+                                                    É importante notar que a otimização de funções de erro em modelos não lineares pode ser mais complexa do que em modelos lineares, devido 
+                                                    à possibilidade de convergência para mínimos locais. Portanto, é aconselhável usar software estatístico ou matemático especializado que 
+                                                    ofereça ferramentas para ajustar modelos não lineares e fornecer estimativas confiáveis dos parâmetros. Além disso, uma boa compreensão da 
+                                                    teoria subjacente ao modelo não linear escolhido é essencial para interpretar adequadamente os resultados. <br><br>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <h6>Caso não linear</h6>
+                                                <p>Confira pela aba de navegação no <a href="#topo">Topo</a> </p>
+                                                    
                                             </div>
                                     
                                         
@@ -137,16 +256,9 @@ https://www.tooplate.com/view/2125-artxibition
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <h4>Linear</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br>
+                                            <p>Para o caso linear, usaremos a seguinte equação para realização do ajuste: 𝑔(𝑥)=𝑎𝑥+𝑏 <br><br>
 
-                                                 &nbsp;&nbsp;&nbsp;&nbsp;Cras sed cursus nisi. In hac habitasse platea dictumst. Nunc pellentesque, magna ac egestas laoreet, justo arcu 
-                                                accumsan lorem, vitae vulputate lorem eros at massa. Nullam luctus fringilla pellentesque. Nam nec euismod est. 
-                                                Ut eget risus dui. Sed condimentum aliquam elit et fermentum. In facilisis, massa et efficitur posuere, neque mauris 
-                                                tincidunt ipsum, non tincidunt libero urna non augue. Donec et arcu sit amet lorem accumsan convallis.
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;Tabelamento usado: 
                                                 <br><br>
                                             </p>
                                         </div>
@@ -169,11 +281,7 @@ https://www.tooplate.com/view/2125-artxibition
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br> <br><br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<- Valores de A e B encontrados. R2 encontrado em comparação ao calculado e plotado no grafico do Escel <br><br> <br><br>
                                             </p>
                                         </div>
 
@@ -196,16 +304,13 @@ https://www.tooplate.com/view/2125-artxibition
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <h4>Exponencial</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br>
+                                            <p>A função exponencial é representada pela seguinte equação: 𝑔(𝑥)=be^ax <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Nesse caso, por se tratar de uma função não linear, para realizar o cálculo dos coeficientes 𝑎 e 𝑏 é precisa, antes, linearizá-la. 
+                                                &nbsp;&nbsp;&nbsp;&nbsp;A função exponencial linearizada fica da seguinte forma: ln(𝑦)=𝑎.𝑥+ln(𝑏) <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;É preciso se atentar que para o valor de ln (𝑦) ao invés do valor de 𝑦 no cálculo dos coeficientes. Como a equação trabalha com o 
+                                                ln (𝑏), para encontrar o valor real de b faz-se necessário a conversão: b=e^(ln⁡(b))
 
-                                                 &nbsp;&nbsp;&nbsp;&nbsp;Cras sed cursus nisi. In hac habitasse platea dictumst. Nunc pellentesque, magna ac egestas laoreet, justo arcu 
-                                                accumsan lorem, vitae vulputate lorem eros at massa. Nullam luctus fringilla pellentesque. Nam nec euismod est. 
-                                                Ut eget risus dui. Sed condimentum aliquam elit et fermentum. In facilisis, massa et efficitur posuere, neque mauris 
-                                                tincidunt ipsum, non tincidunt libero urna non augue. Donec et arcu sit amet lorem accumsan convallis.
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Tabelamento usado
                                                 <br><br>
                                             </p>
                                         </div>
@@ -228,11 +333,7 @@ https://www.tooplate.com/view/2125-artxibition
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br> <br><br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<- Valores de A e B encontrados. R2 encontrado em comparação ao calculado e plotado no grafico do Escel <br><br> <br><br>
                                             </p>
                                         </div>
 
@@ -250,21 +351,73 @@ https://www.tooplate.com/view/2125-artxibition
                                         
                                     </div>
                                 </article> 
+
+                                <article id='potencial'>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h4>Potencial</h4>
+                                            <p>Uma função potencial é representada pela seguinte equação: g(x)=bx^a <br>
+                                                Uma função não linear que precisa ser linearizada para que possamos encontrar os valores dos coeficientes 𝑎 e 𝑏. Vê-se:
+                                                ln(𝑦)=𝑎.ln(𝑥)+ ln(𝑏) <br> 
+                                                Utilizamos ln(𝑥) no lugar de x e ln(𝑦) no lugar de y para o cálculo dos coeficientes 𝑎 e 𝑏. De maneira similar ao caso 
+                                                exponencial, para encontrar o valor real de b, usamos seguinte equação:
+                                                b=e^(ln⁡(b))
+                            
+
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;Tabelamento usado: 
+                                                <br><br>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-3" style="display: flex !important; flex-direction: column; align-items: center !important; justify-content: center;">
+                                            <img src="./assets/images/Potencial/1.png" alt="" width="80%">
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                        </div>
+
+                                        <div class="col-lg-9">
+                                            <img src="./assets/images/Potencial/2.png" alt="" width="100%">
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <img src="./assets/images/Potencial/3.png" alt="" width="100%">
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<- Valores de A, B e R2 encontrados. <br><br>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <img src="./assets/images/Potencial/" alt="" width="100%">
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                        </div>
+                                        
+                                    </div>
+                                </article> 
                                 
                                 <article id='geometrica'>
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <h4>Geometrica</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br>
+                                            <p>Uma função geométrica é representada pela seguinte equação: g(x)=ba^x <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Uma função não linear que precisa ser linearizada para que possamos encontrar os valores dos coeficientes 𝑎 e 𝑏. Vê-se:
+                                                ln(𝑦)=𝑥.ln(𝑎)+ ln(𝑏)
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Novamente, é preciso de atentar em utilizar o valor de ln (𝑦) ao invés do valor de 𝑦 no cálculo dos coeficientes. 
+                                                Como a equação trabalha com o ln (𝑎) e ln (𝑏), para encontrar o valor real de 𝑎 e b basta utilizar as seguintes equações: a=e^(ln⁡(a)); b=e^(ln⁡(b))
+                                                 <br><br>
 
-                                                 &nbsp;&nbsp;&nbsp;&nbsp;Cras sed cursus nisi. In hac habitasse platea dictumst. Nunc pellentesque, magna ac egestas laoreet, justo arcu 
-                                                accumsan lorem, vitae vulputate lorem eros at massa. Nullam luctus fringilla pellentesque. Nam nec euismod est. 
-                                                Ut eget risus dui. Sed condimentum aliquam elit et fermentum. In facilisis, massa et efficitur posuere, neque mauris 
-                                                tincidunt ipsum, non tincidunt libero urna non augue. Donec et arcu sit amet lorem accumsan convallis.
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;Tabelamento usado: 
                                                 <br><br>
                                             </p>
                                         </div>
@@ -287,11 +440,7 @@ https://www.tooplate.com/view/2125-artxibition
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br> <br><br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<- Valores de A, B e R2 encontrados. <br><br>
                                             </p>
                                         </div>
 
@@ -314,16 +463,10 @@ https://www.tooplate.com/view/2125-artxibition
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <h4>Logaritima</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br>
-
-                                                 &nbsp;&nbsp;&nbsp;&nbsp;Cras sed cursus nisi. In hac habitasse platea dictumst. Nunc pellentesque, magna ac egestas laoreet, justo arcu 
-                                                accumsan lorem, vitae vulputate lorem eros at massa. Nullam luctus fringilla pellentesque. Nam nec euismod est. 
-                                                Ut eget risus dui. Sed condimentum aliquam elit et fermentum. In facilisis, massa et efficitur posuere, neque mauris 
-                                                tincidunt ipsum, non tincidunt libero urna non augue. Donec et arcu sit amet lorem accumsan convallis.
+                                            <p>Uma função logarítmica é representada pela seguinte equação: 𝑔(𝑥)=𝑎ln(𝑥)+𝑏 <br>
+                                                Apesar de não ser uma função linear, é possível calcular a função de ajuste (pois ela se encontra em formato linearizada), substituindo x por ln (𝑥); sem alterar o valor do y.
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;Tabelamento usado: 
                                                 <br><br>
                                             </p>
                                         </div>
@@ -346,11 +489,7 @@ https://www.tooplate.com/view/2125-artxibition
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br> <br><br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<- Valores de A e B encontrados. R2 encontrado em comparação ao calculado e plotado no grafico do Escel <br><br> <br><br>
                                             </p>
                                         </div>
 
@@ -373,17 +512,12 @@ https://www.tooplate.com/view/2125-artxibition
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <h4>Polinomial</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br>
-
-                                                 &nbsp;&nbsp;&nbsp;&nbsp;Cras sed cursus nisi. In hac habitasse platea dictumst. Nunc pellentesque, magna ac egestas laoreet, justo arcu 
-                                                accumsan lorem, vitae vulputate lorem eros at massa. Nullam luctus fringilla pellentesque. Nam nec euismod est. 
-                                                Ut eget risus dui. Sed condimentum aliquam elit et fermentum. In facilisis, massa et efficitur posuere, neque mauris 
-                                                tincidunt ipsum, non tincidunt libero urna non augue. Donec et arcu sit amet lorem accumsan convallis.
+                                            <p>Uma função logarítmica é representada pela seguinte equação: 𝑔(𝑥)=𝑎ln(𝑥)+𝑏 <br>
+                                                &nbsp;&nbsp;&nbsp;&nbspApesar de não ser uma função linear, é possível calcular a função de ajuste (pois ela se encontra 
+                                                em formato linearizada), substituindo x por ln (𝑥); sem alterar o valor do y.
                                                 <br><br>
+
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;Tabelamento usado: <br><br>
                                             </p>
                                         </div>
 
@@ -405,11 +539,7 @@ https://www.tooplate.com/view/2125-artxibition
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br> <br><br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<- Valores de A, B e C encontrados. R2 encontrado em comparação ao calculado e plotado no grafico do Escel <br><br> <br><br>
                                             </p>
                                         </div>
 
@@ -418,11 +548,7 @@ https://www.tooplate.com/view/2125-artxibition
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br> <br><br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Eliminação de Gauss -><br><br> <br><br>
                                             </p>
                                         </div>
 
@@ -453,20 +579,12 @@ https://www.tooplate.com/view/2125-artxibition
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <h4>Polinomial</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus rhoncus luctus. Vestibulum in mi lobortis lorem 
-                                                lacinia semper at ut leo. Nulla facilisi. Mauris vitae urna eu lorem mollis posuere. Aliquam porttitor metus eget 
-                                                diam aliquet, vitae pulvinar purus elementum. Sed maximus elementum mi tristique luctus. Integer quam ipsum, hendrerit
-                                                 eu pharetra sit amet, sodales et elit. Curabitur vel lobortis est. Integer mattis mauris ante, vitae congue eros 
-                                                 sollicitudin semper. Quisque interdum erat eget egestas blandit. Suspendisse potenti. <br><br>
-
-                                                 &nbsp;&nbsp;&nbsp;&nbsp;Cras sed cursus nisi. In hac habitasse platea dictumst. Nunc pellentesque, magna ac egestas laoreet, justo arcu 
-                                                accumsan lorem, vitae vulputate lorem eros at massa. Nullam luctus fringilla pellentesque. Nam nec euismod est. 
-                                                Ut eget risus dui. Sed condimentum aliquam elit et fermentum. In facilisis, massa et efficitur posuere, neque mauris 
-                                                tincidunt ipsum, non tincidunt libero urna non augue. Donec et arcu sit amet lorem accumsan convallis.
-                                                <br><br>
+                                            <p>Este código Python oferece uma ferramenta valiosa para a análise do aumento da temperatura global ao longo do tempo, utilizando o método dos 
+                                                mínimos quadrados para ajustar uma linha de tendência linear. Através da coleta, preparação, cálculo e visualização dos dados, os pesquisadores 
+                                                podem obter uma compreensão mais profunda das tendências de aquecimento global e contribuir para o entendimento das mudanças climáticas. 
+                                                É importante notar que este código pode ser personalizado para diferentes conjuntos de dados e períodos de tempo, tornando-o uma ferramenta 
+                                                versátil para a análise climática.<br><br>
                                             </p>
-                                            
-                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
                                         </div>
 
                                         <div class="col-lg-12">
@@ -513,7 +631,7 @@ https://www.tooplate.com/view/2125-artxibition
                 <div class="col-lg-4">
                     <div class="hours">
                         <h4>Dados do trabalho</h4>
-                        <span>Trabalho apresentado a disciplina de Cálculo Númerio referente a nota da terceira unidade do semestre 2023.1</span>
+                        <span>Trabalho apresentado a disciplina de Cálculo Númerico referente a nota da terceira unidade do semestre 2023.1</span>
                     </div>
                 </div>
                 <div class="col-lg-12">
